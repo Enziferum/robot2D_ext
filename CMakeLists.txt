@@ -9,10 +9,11 @@ set(TARGETS_EXPORT_NAME "${PROJECT_NAME}Targets")
 
 
 set(SRC
-        include/ext/glad.h
-        include/ext/khrplatform.h
-        include/ext/stb_image_aug.h
-        include/ext/stb_image.h
+        include/robot2D/internal/glad.h
+        include/robot2D/internal/khrplatform.h
+        include/robot2D/internal/stb_image_aug.h
+        include/robot2D/internal/stb_image.h
+        include/robot2D/internal/stb_image_write.h
         )
 
 set(SRC
@@ -36,7 +37,7 @@ configure_package_config_file(
 )
 
 # Install
-install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/ext DESTINATION include)
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/robot2D/internal DESTINATION include)
 
 install(TARGETS ${PROJECT_NAME} EXPORT ${TARGETS_EXPORT_NAME}
         LIBRARY DESTINATION lib

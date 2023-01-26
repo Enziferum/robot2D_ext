@@ -63,7 +63,7 @@
              on 'test' only check type, not whether we support this variant
 */
 
-#include "ext/stb_image_aug.h"
+#include "robot2D/internal/stb_image_aug.h"
 
 #ifndef STBI_NO_HDR
 #include <math.h>  // ldexp
