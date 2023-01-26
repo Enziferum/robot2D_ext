@@ -22,7 +22,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <robot2D/internal/glad.h>
+#include <internal/glad.h>
 
 static void* get_proc(const char *namez);
 
